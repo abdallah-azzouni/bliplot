@@ -40,10 +40,13 @@ def plot(
         "WHITE": "\033[37m",
         "BLACK": "\033[30m",
     }
-    color = COLORS.get(
-        color,
-        COLORS["WHITE"],
+
+    color = (
+        COLORS.get(color.upper(), COLORS["WHITE"])
+        if color is not None
+        else COLORS["WHITE"]
     )
+
     BLOCKS = ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
     IBLOCKS = ["▔", "▀", "█"]
     middle_point = "·"
