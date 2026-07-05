@@ -45,7 +45,7 @@ def plot(
         COLORS["WHITE"],
     )
     BLOCKS = ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
-    IBLOCKS = ["▔", "🮂", "🮃", "▀", "🮄", "🮅", "🮆", "█"]
+    IBLOCKS = ["▔", "▀", "█"]
     middle_point = "·"
 
     if len(lst) == 0:
