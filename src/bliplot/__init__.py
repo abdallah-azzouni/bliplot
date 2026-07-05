@@ -2,7 +2,12 @@ import numpy as np
 import shutil
 
 
-def plot(lst: list, width: int = None, height: int = None, color: str = None):
+def plot(
+    lst: list,
+    width: int | None = None,
+    height: int | None = None,
+    color: str | None = None,
+):
     """_summary_
     Renders a list of numbers as a text-based graph in the terminal.
 
