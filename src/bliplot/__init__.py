@@ -1,9 +1,10 @@
+from typing import Sequence
 import numpy as np
 import shutil
 
 
 def plot(
-    lst: list,
+    lst: Sequence[int | float],
     width: int | None = None,
     height: int | None = None,
     color: str | None = None,
@@ -13,7 +14,7 @@ def plot(
 
 
     Args:
-        lst (list): The Y values to be plotted. The X values are inferred from the index of the list.
+        lst (Sequence[int | float]): The Y values to be plotted. The X values are inferred from the index of the list.
         width (int, optional): The width of the graph in characters. If None, it will use the terminal width.
         height (int, optional): The height of the graph in characters. If None, it will use the terminal height.
         color (str, optional):  The color of the graph. Can be one of "RESET", "GREEN", "CYAN", "YELLOW", "RED", "MAGENTA", "BLUE", "WHITE", or "BLACK". If None, it will default to white.
