@@ -114,7 +114,7 @@ remainder. The integer part decides how many full blocks (`█`) to stack.
 The remainder picks *which* of the 8 partial block glyphs
 (`▁▂▃▄▅▆▇█`) caps the column, giving you roughly 8x the vertical resolution.
 
-Negative values use the upper-eighth block set (`▔🮂🮃▀🮄🮅🮆█`) so bars
+Negative values use the upper block set (`▔▀█`) so bars
 growing downward from the midline look correct rather than upside-down.
 
 ## License
